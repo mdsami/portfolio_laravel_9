@@ -1,4 +1,10 @@
-	<!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+<footer class="footer text-center py-4">
+    <small class="copyright"> Copyright &copy; 2020-2022 <a href="http://mdsami.xyz/" target="_blank"> mdsami</a></small>
+</footer>
+
+</div>
+<!--//main-wrapper-->	
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
 	<div id="config-panel" class="config-panel d-none d-lg-block">
 		<div class="panel-inner">
 			<a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog mx-auto" data-fa-transform="down-6" ></i></a>

@@ -3,15 +3,6 @@
 
 @section('content')
 
-    <style type="text/css">
-        /* .disabled{
-            pointer-events: none;
-            cursor: default;
-        } */
-    </style>
-
-
-
 <body class="dark-mode">
 	
 	<header class="header text-center">	    
@@ -30,11 +21,11 @@
 						
 						<div class="bio mb-3">Hi, my name is Md Sami and I'm a Tech Lead & Tech Enthusiast ,Welcome to my personal website!</div><!--//bio-->
 						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="http://fb.me/eng.mdsami"><i class="fab fa-facebook fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="http://twitter.com/mdsami5"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/mdsami55"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
 							<li class="list-inline-item"><a href="http://github.com/mdsami"><i class="fab fa-github-alt fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-docker fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="http://docker.com/users/mdsami"><i class="fab fa-docker fa-fw"></i></a></li>
 							
 						</ul><!--//social-list-->
 						<hr> 
@@ -42,25 +33,25 @@
 					
 					<ul class="navbar-nav flex-column text-left">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw mr-2"></i>About Me<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="{{ route('resume') }}"><i class="fas fa-user fa-fw mr-2"></i>About Me<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
+							<a class="nav-link" href="{{ route('portfolio') }}"><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="services.html"><i class="fas fa-briefcase fa-fw mr-2"></i>Services &amp; Pricing</a>
+							<a class="nav-link" href="{{ route('services') }}"><i class="fas fa-briefcase fa-fw mr-2"></i>Services &amp; Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
+							<a class="nav-link" href="{{ route('resume') }}" > <i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="blog-home.html"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
+							<a class="nav-link" href="{{ route('blog') }}"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact</a>
+							<a class="nav-link" href="{{ route('contact') }}" ><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="project.html"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Project Page</a>
+							<a class="nav-link" href="{{ route('project') }}"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Project Page</a>
 						</li>
 						<!-- <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -459,10 +450,6 @@
 			
 		</section><!--//latest-blog-section-->
 
-		<footer class="footer text-center py-4">
-			<small class="copyright"> Copyright &copy;2020 <a href="http://mdsami.me/" target="_blank">mdsami</a></small>
-		</footer>
-		
-	</div><!--//main-wrapper-->
+
 
     @extends('layouts.frontend.footer')
